@@ -1,0 +1,43 @@
+/**
+ * src/styles/settings.scss
+ *
+ * Configures SASS variables and Vuetify overwrites
+ */
+
+// https://vuetifyjs.com/features/sass-variables/`
+@use 'vuetify/settings' with (
+	$color-pack: false,
+	$app-bar-background: transparent,
+	$text-field-border-radius: 50%
+);
+
+.v-application {
+	background: #9dbae7 !important;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-size: 1rem;
+}
+form {
+	display: grid;
+	grid-template-rows: auto;
+	padding: 2em;
+}
+.number-input {
+	width: 10em;
+}
+.swal2-container {
+	z-index: 20000 !important;
+}
+h2{
+	margin-bottom: 2rem;
+}
+
+///* modificando tamanho do icone do vlibras */
+//.active {
+//  transform: scale(1.3);
+//  margin-right: 2rem;
+//}
+///* modificando card vlibras */
+//div[vw-plugin-wrapper] {
+//  transform: scale(1) !important;
+//}

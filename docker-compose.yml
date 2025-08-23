@@ -1,0 +1,17 @@
+services:
+  app:
+    image: 'automatic-system-generate-app'
+    ports:
+      - '3000:3000'
+    working_dir: /app
+    user: "${USER_ID}:${GROUP_ID}"
+    volumes:
+      - type: bind
+        source: .
+        target: /app
+    tty: true
+    stdin_open: true
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: sh -c "yarn install && yarn dev"

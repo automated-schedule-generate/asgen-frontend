@@ -1,0 +1,27 @@
+# arquivos e pastas desnecessários para o build
+node_modules
+dist
+yarn.lock
+package-lock.json
+
+## arquivos e pastas ocultos
+.nuxt
+.output
+.idea
+.env*
+!.env
+.vscode
+.gitignore
+
+## arquivos
+README.md
+docker-compose.yml
+Dockerfile
+
+## pastas
+android
+ios
+dist
+www
+
+/**/test*
